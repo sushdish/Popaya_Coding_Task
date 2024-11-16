@@ -25,13 +25,13 @@ The candidate should implement an API to import customer data from the provided 
 
 - Total number of leads
 - Unique location count
-- Average budget range per lead type (rental vs. sale)
-- Average inquiry rate (frequency of leads by timeframe)
+- Average budget range per lead type (rental vs. sale) (🌟 Bonus Point)
+- Average inquiry rate (frequency of leads by timeframe) (🌟 Bonus Point)
 
 ## API Endpoints
 
 #### POST /analyze: Import and analyze provided lead data JSON and store the analyzed data in a JSON file
 
-#### GET /leadSummary: Provides a summary of lead profiling metrics like total leads, unique locations, etc
+#### GET /lead/:leadPhoneNumber: Returns a detailed profile of a specific lead by phone number which should include all sale and rental lead data related to that phone number
 
-#### GET /lead/:lead_phone_number: Returns a detailed profile of a specific lead by phone number
+#### (🌟 Bonus Point) GET /leadSummary: Provides a summary of lead profiling metrics like total leads, unique locations, etc
